@@ -156,7 +156,7 @@ export class Game {
     this.canvas.addEventListener('webglcontextlost', (e) => {
       e.preventDefault();
       if (document.querySelector('.ctx-lost')) return;
-      const m = h(`<div class="modal-wrap ctx-lost"><div class="modal"><h2>Graphics reset</h2><p>Your phone paused the 3D graphics. Your progress is saved.</p><div class="acts"><button class="btn" data-reload>Reload</button></div></div></div>`);
+      const m = h(`<div class="modal-wrap ctx-lost"><div class="modal"><h2>Graphics reset</h2><p>Your device paused the 3D graphics. Your progress is saved.</p><div class="acts"><button class="btn" data-reload>Reload</button></div></div></div>`);
       m.querySelector('[data-reload]')!.addEventListener('click', () => location.reload());
       this.ui.appendChild(m);
     });
@@ -315,7 +315,7 @@ export class Game {
   }
 
   private titleFoot(): string {
-    const sideways = this.coarse && innerWidth < innerHeight ? ' Turn your phone sideways for the best view.' : '';
+    const sideways = this.coarse && innerWidth < innerHeight ? ' Turn your screen sideways for the best view.' : '';
     const stats = this.profile.totalWins > 0
       ? `${fmt(this.profile.totalWins)} wins · ${fmt(this.profile.totalKills)} knockouts · ${fmt(this.profile.gold)} gold banked.`
       : 'Best with sound on.';
