@@ -7,6 +7,12 @@ level up and visibly evolve as they grow.
 Everything is generated in code: creature models, textures, environments, effects, music and sound.
 There are no asset files to download or license.
 
+**Play it:** https://manaol2112.github.io/animalbattlesimulator/
+
+On an iPad or iPhone, open that link in Safari, tap Share, then Add to Home Screen. It opens full screen
+like an app, with no sign-in, and progress is saved on the device. Every push to `main` runs the tests and,
+if they pass, updates the live game.
+
 ## Run it
 
 ```bash
